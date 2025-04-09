@@ -1,7 +1,7 @@
 ---
 - name: Verificando status da Aplicação Dexter
   ansible.builtin.uri:
-    url: "http://balancer-server"
+    url: "http://172.16.0.200"
     return_content: true
   register: response
 - name: Response
